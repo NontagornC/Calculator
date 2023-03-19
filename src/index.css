@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .operator{
+        background-color: #1D9AF2;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        height:50px;
+        font-size:24px;
+        box-shadow: 0 0 4px #999;
+        background-position: center;
+        transition: background 0.8s;
+        }
+    .operator:hover{
+        background:#292d3e radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+        color: #1D9AF2;
+        border: 1px solid #1D9AF2;
+    }
+
+    .number:hover{
+        background:#47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+        color: white;
+        border: 1px solid #1D9AF2;
+        }
+
+    .operator:active,
+    .number:active{
+        background-color:#292d3e;
+        background-size: 100%;
+        transition: background 0s;
+        }
+    .number{
+        cursor: pointer;
+        background-color: #292D3E;
+        color: #1D9AF2;
+        height: 50px;
+        font-size: 24px;
+        box-shadow: 0 0 4px #999;
+        background-position: center;
+        transition: background 0.8s;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .operator{
+        font-size: 20px;
+    }
+    .number{
+        font-size: 20px;
+    }
+}
